@@ -94,6 +94,11 @@ namespace ValidateFiles
                     dataGridView.Columns[column.Index].Width = 0;
                 }
 
+                if (dataGridView.Columns[column.Index].HeaderText.ToLower() == "empty9")
+                {
+                    dataGridView.Columns[column.Index].Width = 0;
+                }
+
                 if (dataGridView.Columns[column.Index].HeaderText.ToLower() == "empty10")
                 {
                     dataGridView.Columns[column.Index].Width = 0;

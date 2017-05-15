@@ -59,11 +59,11 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(31, 55);
-            this.dataGridView1.MaximumSize = new System.Drawing.Size(1193, 566);
-            this.dataGridView1.MinimumSize = new System.Drawing.Size(1193, 566);
+            this.dataGridView1.MaximumSize = new System.Drawing.Size(1400, 566);
+            this.dataGridView1.MinimumSize = new System.Drawing.Size(1400, 566);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1193, 566);
+            this.dataGridView1.Size = new System.Drawing.Size(1400, 566);
             this.dataGridView1.TabIndex = 2;
             // 
             // btnSave
@@ -80,7 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1281, 654);
+            this.ClientSize = new System.Drawing.Size(1447, 654);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
