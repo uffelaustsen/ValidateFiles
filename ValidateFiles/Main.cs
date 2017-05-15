@@ -40,5 +40,22 @@ namespace ValidateFiles
             string timeStamp = DateTime.Now.ToString("yyyyMMddHHmmssfff");
             FileHelper.SaveFile(dataGridView1, FileHelper.FilePath + "\\" + timeStamp + FileHelper.FileName);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkIncludeHeadersOnCopyPaste_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkIncludeHeadersOnCopyPaste.Checked == true)
+            {
+                dataGridView1.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+            }
+            else
+            {
+                dataGridView1.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            }
+        }
     }
 }
