@@ -176,7 +176,7 @@ namespace ValidateFiles
 
             // storing Each row and column value to excel sheet
             int excelColNo = 1;
-            for (int i = 0; i < dataGridView.Rows.Count -1; i++)
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
             {
                 excelColNo = 1;
                 for (int j = 0; j < dataGridView.Columns.Count; j++)

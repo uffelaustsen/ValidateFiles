@@ -67,8 +67,21 @@ namespace ValidateFiles
             if (cpr == null)
                 throw new ArgumentNullException();
 
+            //"-" is required
             if(cpr.Contains("-") == false)
                 return CprValidity.Invalid;
+
+            //Days larger than 31
+            if(int.Parse(cpr.Substring(0,2)) > 31)
+            {
+                return CprValidity.Invalid;
+            }
+
+            //Months larger than 12
+            if (int.Parse(cpr.Substring(2, 2)) > 12)
+            {
+                return CprValidity.Invalid;
+            }
 
 
             cpr = cpr.Replace("-", "");
